@@ -42,9 +42,9 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e rodar o pr
 - **CSS** - Linguagem de estilização para a aparência da página.
 - **JavaScript** - Linguagem de programação para a lógica da aplicação.
 
-## 👷 Autor
+## 🧑🏽‍💻 Autor
 
-- **Ângelo Silvano** - Desenvolvedor principal - [GitHub](https://github.com/angelodesenvolvedor)
+* **Angelo Silvano** - *Front-End Developer* - [angelodesenvolvedor](https://github.com/angelodesenvolvedor)
 
 ## 📄 Licença
 
