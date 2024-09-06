@@ -15,10 +15,11 @@ const MESSAGES = {
  * Gera a URL de busca no Google com base na consulta fornecida.
  * @param {string} query - A consulta de pesquisa.
  * @returns {string} - A URL de busca no Google.
+ * @throws {Error} - Se a consulta de pesquisa estiver vazia ou não for uma string.
  */
 function getGoogleSearchURL(query) {
-    if (!query.trim()) {
-        throw new Error('A consulta de pesquisa não pode estar vazia.');
+    if (typeof query !== 'string' || !query.trim()) {
+        throw new Error('A consulta de pesquisa deve ser uma string não vazia.');
     }
     return `${BASE_GOOGLE_SEARCH_URL}${encodeURIComponent(query)}`;
 }
@@ -29,6 +30,7 @@ function getGoogleSearchURL(query) {
  * @param {string} template - A string de modelo com placeholders.
  * @param {Object} replacements - Um objeto contendo as substituições para os placeholders.
  * @returns {string} - A mensagem formatada.
+ * @throws {TypeError} - Se o template não for uma string ou as substituições não forem um objeto.
  */
 function formatMessage(template, replacements) {
     if (typeof template !== 'string') {
@@ -43,5 +45,5 @@ function formatMessage(template, replacements) {
     });
 }
 
-// Exportar dados e funções
+// Exporta dados e funções
 export { MESSAGES, getGoogleSearchURL, formatMessage };
