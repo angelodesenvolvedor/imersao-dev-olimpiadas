@@ -1,0 +1,177 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o header */
+header {
+    margin-bottom: 2rem;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem;
+    color: #222831;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Estiliza o container de busca */
+#search-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Ajusta a largura da barra de pesquisa com porcentagem e tamanho mínimo */
+section input {
+    width: 100%; /* Preenche 100% do container */
+    max-width: 30rem; /* Define uma largura máxima */
+    min-width: 15rem; /* Define uma largura mínima para telas pequenas */
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #30475E;
+  color: #F5F7F8;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  max-width: 10rem;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 100%;
+    max-width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    background-color: #FFFFFF;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+    margin-bottom: 0.5rem; /* Adiciona margem abaixo do título */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    color: #30475E;
+    transition: color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline;
+    color: #1F2A38; /* Cor do link ao passar o mouse */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem; /* Reduz o espaçamento das letras */
+    }
+
+    section input {
+        width: 90%;
+    }
+
+    section button {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    section input {
+        width: 100%;
+        padding: 0.8rem; /* Reduz o padding para telas pequenas */
+    }
+
+    section button {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.8rem 1rem; /* Ajusta o padding para botões pequenos */
+    }
+
+    .resultados-pesquisa {
+        height: 50vh; /* Ajusta a altura para telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem;
+    }
+}

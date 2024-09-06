@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Olimpíadas</title>
+</head>
+<body>
+    <header>
+        <h1>Atletas do Brasil</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Digite o nome do atleta">
+                <button id="search-button">Pesquisar</button>
+            </div>
+            <!-- Mensagem de erro -->
+            <div id="error-message" style="display: none; color: red; text-align: center; margin-top: 10px;"></div>
+            <!-- Mensagem de confirmação -->
+            <div id="confirmation-message" style="display: none; text-align: center; margin-top: 10px; font-size: 16px; color: green;"></div>
+            <!-- Mensagem personalizada com link -->
+            <div id="custom-message" style="display: none; text-align: center; margin-top: 10px; font-size: 16px; color: blue;"></div>
+        </section>
+        <section id="results-section">
+            <!-- Aqui serão exibidos os resultados da pesquisa -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Atletas do Brasil. Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: <a href="mailto:angelo@atletas.com.br">angelo@atletas.com.br</a></p>
+    </footer>
+    <script src="./js/dados.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
