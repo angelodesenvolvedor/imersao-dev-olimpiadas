@@ -48,4 +48,4 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e rodar o pr
 
 ## 📄 Licença
 
-- Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+- Este projeto está sob a licença MIT - acesse os detalhes em [LICENSE.md](https://github.com/angelodesenvolvedor/imersao-dev-olimpiadas?tab=MIT-1-ov-file).
