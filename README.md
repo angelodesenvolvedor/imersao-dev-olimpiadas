@@ -42,16 +42,10 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e rodar o pr
 - **CSS** - Linguagem de estilização para a aparência da página.
 - **JavaScript** - Linguagem de programação para a lógica da aplicação.
 
-### Front-end
-
-- **HTML**
-- **CSS**
-- **JavaScript**
-
-## 👷 Autores
+## 👷 Autor
 
 - **Ângelo Silvano** - Desenvolvedor principal - [GitHub](https://github.com/angelodesenvolvedor)
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+- Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
